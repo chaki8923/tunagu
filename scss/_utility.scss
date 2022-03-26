@@ -1,0 +1,16 @@
+
+.toggle_msg{
+  width: 100%;
+  line-height: 50px;
+  height: 50px;
+  background: rgba(81, 97, 235, 0.8);
+  color: #fff;
+  font-family: $font_family_modal;
+  text-align: center;
+  position: absolute;
+  display: none;
+  z-index: 16;
+  top: 0;
+  font-size: 29px;
+}
+

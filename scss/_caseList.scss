@@ -1,0 +1,528 @@
+.search-result{
+  position: absolute;
+  top: 60px;
+  left: calc(15% - 100px);
+}
+
+
+.case-container {
+  width: 75%;
+  height: auto;
+  float: left;
+  position: relative;
+  padding-top: 80px;
+  @include mq(md) {
+    width: 100%;
+  }
+  @include mq() {
+    width: 100%;
+    height: auto;
+    min-height: 1150px;
+    margin-bottom: 80px;
+  }
+  .pageNation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    @include mq(){
+      bottom: -25px;
+    }
+    li {
+      float: left;
+      text-align: center;
+      margin-right: 11px;
+      padding-top: 5px;
+      width: 30px;
+      height: 30px;
+      background: rgb(70, 68, 68);
+      border-radius: 5px;
+      
+      &.active {
+        background: crimson;
+      }
+    }
+    a {
+      color: #fff;
+    }
+  }
+  .panel {
+    width: 270px;
+    height: 250px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    float: left;
+    margin: 30px 15px 20px 10px;
+    background: url("../img/memo2.png") no-repeat;
+    background-position: center;
+    padding: 24px 0 0 24px;
+    background-size: 100%;
+    position: relative;
+    transition: 0.3s;
+    @include mq(ls) {
+      width: 230px;
+      height: 240px;
+      margin: 20px 8px 15px 10px;
+      padding: 8px 0 0 25px;
+      background-position: top;
+    }
+    @include mq() {
+      width: 90%;
+      margin: 20px 8px 15px 10px;
+      padding: 8px 0 0 45px;
+      height: 280px;
+      background-position: center;
+    }
+    &:hover {
+      transform: scale(1.05) rotate(-2deg);
+      transition: 0.5s;
+    }
+    &-a {
+      color: rgb(70, 68, 68);
+    }
+    p {
+      line-height: 30px;
+      font-size: 14px;
+      @include mq(ls) {
+        font-size: 10px;
+      }
+      @include mq() {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.heart {
+  color: rgb(119, 116, 116);
+  cursor: pointer;
+  margin-right: 16px;
+  &.active {
+    color: rgb(216, 86, 86);
+  }
+}
+.used {
+  color: rgb(119, 116, 116);
+  cursor: pointer;
+  margin-right: 8px;
+  &.active {
+    color: rgb(19, 146, 57);
+  }
+}
+
+.icon {
+  height: 30px;
+  width: 100%;
+  padding: 3px 4px 0 4px;
+}
+
+.like-area {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+}
+
+.used-area {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  width: 200px;
+}
+
+.like_num {
+  font-size: 24px;
+  color: rgb(119, 116, 116);
+  font-family: "Wawati SC", sans-serif;
+  &.beta {
+    color: rgb(216, 86, 86);
+  }
+}
+.use_num {
+  font-size: 24px;
+  color: rgb(119, 116, 116);
+  font-family: "Wawati SC", sans-serif;
+  &.beta {
+    color: rgb(58, 165, 8);
+  }
+}
+
+//詳細画面
+.detail-box {
+  width: 680px;
+  min-height: 810px;
+  height: auto;
+  margin: 60px auto;
+  box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 8px 15px 45px 15px;
+  position: relative;
+  @include mq(ls) {
+    height: 1020px;
+  }
+  @include mq() {
+    width: 100%;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 48px;
+  }
+  &-title {
+    width: 100%;
+    line-height: 42px;
+    background: rgb(228, 223, 223);
+    padding-left: 8px;
+    margin-bottom: 8px;
+    font-weight: normal;
+  }
+  &-inner {
+    width: 100%;
+    height: 230px;
+    @include mq() {
+      height: 400px;
+    }
+  }
+  .cat-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &-date,
+  &-store,
+  &-staff,
+  &-weather,
+  &-place {
+    min-width: 200px;
+    line-height: 42px;
+    background: rgb(230, 224, 224);
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    float: left;
+  }
+
+  &-point {
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    background: rgb(240, 216, 165);
+    padding-left: 8px;
+    float: left;
+    border: 2px #ddd solid;
+  }
+  &-textarea {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+    background: rgb(228, 223, 223);
+    padding: 8px;
+    @include mq(ls) {
+      height: 520px;
+    }
+    @include mq() {
+      min-height: 420px;
+      height: auto;
+    }
+  }
+  .clear {
+    overflow: hidden;
+  }
+  &_btn {
+    display: block;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    padding: 13px 0 0 16px;
+    text-decoration: none;
+    background: #eee;
+    border-radius: 7px;
+    position: absolute;
+    top: 0;
+    right: -250px;
+    z-index: 6;
+    transition: 0.3s;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.4);
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    @include mq(ls) {
+      top: -70px;
+      right: 50px;
+    }
+    @include mq() {
+      top: 90%;
+      padding: 6px 15px;
+      width: 170px;
+      height: 40px;
+      right: 10px;
+    }
+    &:hover {
+      box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
+      transform: translateY(-2px);
+      transition: 0.3s;
+    }
+  }
+  &_used {
+    top: -70px;
+    @include mq(ls) {
+      top: -70px;
+      right: 310px;
+    }
+    @include mq() {
+      top: 90%;
+      width: 140px;
+      left: 10px;
+    }
+  }
+}
+
+// いいね押した人たち
+.slide {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  top: 70px;
+  z-index: 5;
+  transform: translateX(-100%);
+  transition: 0.4s;
+  @include mq() {
+    width: 60%;
+    top: 0;
+  }
+  // いいねスライド
+  &-iine {
+    width: 100%;
+    height: 100%;
+    background: rgba(190, 82, 154, 0.8);
+    overflow-x: hidden;
+    overflow: scroll;
+    transition: 0.4s;
+   
+    &__list {
+      display: flex;
+      margin-top: 30px;
+    }
+    &__text {
+      width: 70%;
+      line-height: 1.2;
+      font-size: 24px;
+      padding: 19px 0 0 0px;
+      margin: 20px 0 0 0px;
+      background-size: contain;
+      @include mq(){
+        padding: 19px 10px;
+      }
+    }
+    img {
+      display: inline;
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }
+  // 使い回しスライド
+  &-use {
+    width: 100%;
+    height: 100%;
+    background: rgba(72, 172, 97, 0.6);
+    overflow-x: hidden;
+    overflow: scroll;
+    transition: 0.4s;
+    &__list {
+      display: flex;
+      margin-top: 30px;
+    }
+    &__text {
+      width: 100%;
+      line-height: 1.2;
+      padding: 19px 0 0 50px;
+      font-size: 24px;
+      margin-top: 20px;
+      @include mq(){
+        padding: 19px 10px;
+      }
+      
+    }
+    img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      border-radius: 50%;
+      @include mq(){
+        padding: 10px;
+      }
+      background-size: contain;
+    }
+  }
+}
+.slidein {
+  transform: translateX(100%);
+  transition: 0.4s;
+}
+
+// いいねユーザー達を表示
+.iine-user,
+.used-user {
+  font-family: "Wawati SC", sans-serif;
+  br {
+    display: none;
+    @include mq() {
+      display: block;
+    }
+  }
+}
+
+.iine-user.panish {
+  display: none;
+}
+.used-user.panish {
+  display: none;
+}
+
+.iine-close {
+  font-family: "Wawati SC", sans-serif;
+  display: none;
+}
+.iine-close.active {
+  display: block;
+}
+
+.used-close {
+  font-family: "Wawati SC", sans-serif;
+  display: none;
+}
+.used-close.active {
+  display: block;
+}
+
+.host-btn {
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+  .delete {
+    width: 120px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 24px;
+    cursor: pointer;
+  }
+}
+
+.news {
+  &-container {
+    padding: 48px 16px;
+  }
+  &-area {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #ddd;
+    padding: 8px;
+    @include mq(md) {
+      right: 55px;
+    }
+    @include mq() {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 78%;
+      padding: 5px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+  &-list {
+    list-style: none;
+  }
+  &-item {
+    padding: 3px 10px;
+  }
+  &-link {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: 0.3s;
+
+    &__iine {
+      color: rgb(231, 67, 67);
+      transition: 0.3s;
+      &::after {
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 1px;
+        content: "";
+        background: rgb(231, 67, 67);
+        transition: 0.3s;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+    &__use {
+      color: rgb(6, 179, 58);
+      &::after {
+        transition: 0.3s;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 1px;
+        content: "";
+        background: rgb(6, 179, 58);
+      }
+      &:hover::after {
+        transition: 0.3s;
+        width: 100%;
+      }
+    }
+  }
+  &-inner {
+    width: 440px;
+    margin: 80px auto;
+    text-align: center;
+  }
+  &-panel {
+    text-decoration: none;
+    color: #333;
+  }
+  &-label {
+    width: 100%;
+    line-height: 3rem;
+    border: 1px #ddd solid;
+    display: flex;
+    justify-content: space-around;
+    font-family: $font-family;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    margin-bottom: 16px;
+    p {
+      font-size: 20px;
+    }
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.user-store{
+  font-size: 14px;
+}

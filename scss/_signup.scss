@@ -1,0 +1,316 @@
+// 新規登録＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞＞
+.signup {
+  width: 100%;
+  &-title {
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  &-img {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .modal {
+      width: 50%;
+      height: 45%;
+      margin: auto;
+      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.5);
+      display: flex;
+      align-items: center;
+      @include mq(md){
+        width: 70%;
+      }
+      @include mq(){
+        width: 90%;
+        height: 30%;
+      }
+      &-title {
+        width: 100%;
+        text-align: center;
+        color: rgb(61, 59, 61);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-weight: normal;
+      }
+    }
+
+    .err_modal {
+      width: 160px;
+      height: 120px;
+      border-radius: 9px;
+      padding-top: 8px;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      opacity: 0;
+      transition: 0.5s;
+      transform: translateX(-50%);
+      background: rgba(230, 227, 227, 0.5);
+      cursor: pointer;
+      h2 {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        color: rgb(221, 48, 48);
+      }
+      &.fadein {
+        animation: fadein 0.8s ease-in forwards;
+      }
+      .arrow {
+        display: block;
+        margin: auto;
+        width: 30px;
+        color: red;
+        animation: up-down 0.3s ease-in-out alternate infinite;
+      }
+    }
+
+    @keyframes up-down {
+      from {
+        transform: translateY(5px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    &-top {
+      background: url("../img/discashon.png") no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      @include mq(){
+        background: none;
+        width: 100%;
+        height: 340px;
+        overflow: hidden;
+      }
+      &::after{
+        @include mq(){
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          width: 100%;
+          height: 100vh;
+          background: url("../img/online.png") no-repeat;
+          background-size: contain;
+
+        }
+      }
+      
+    }
+    &-middle {
+      background: url("../img/tunag2.gif") no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      @include mq(){
+        background: none;
+        
+      }
+      
+      &::after{
+        @include mq(){
+          content: '';
+          position: fixed;
+          top: 30%;
+          left: 0;
+          z-index: -1;
+          width: 100%;
+          height: 100vh;
+          background: url("../img/discashon.png")  no-repeat;
+          background-size: contain;
+
+        }
+      }
+    }
+    &-bottom {
+      background: url("../img/online.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      @include mq(){
+        background: none;
+
+      }
+    }
+  }
+}
+.input-attend {
+  display: inline-block;
+}
+
+.form-inner{
+  width: 510px;
+  margin: auto;
+  height: auto;
+  @include mq(){
+    width: 100%;
+  }
+}
+
+.signup {
+  &-title {
+    color: $font_color_default;
+    width: 100%;
+    text-align: center;
+  }
+
+  &-form {
+    width: 100%;
+    height: 1120px;
+    padding: 80px 230px;
+    @include mq(ls){
+      padding: 60px 20px;
+    }
+    @include mq(){
+      background: rgba(255,255,255,.8);
+    }
+    &-prof {
+      height: 830px;
+      padding: 80px 280px;
+      @include mq(ls){
+        padding: 74px 32px 0 32px;
+      }
+
+    }
+    &-inputbox {
+      display: block;
+      margin: auto;
+      width: 100%;
+      min-width: 350px;
+      outline: none;
+      border: none;
+      height: 50px;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      padding-left: 10px;
+      background: rgba(219, 218, 218, 0.5);
+      @include mq(){
+        min-width: 0;
+      }
+
+      &:focus {
+        border: 1px $font_color_sub1 solid;
+      }
+    }
+
+    &-store {
+      width: 300px !important;
+      height: 35px;
+      display: block;
+      margin-bottom: 30px;
+      @include mq() {
+        width: 200px;
+      }
+    }
+    &-drop {
+      display: block;
+      margin: auto;
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      background: rgb(172, 166, 166);
+      position: relative;
+      p {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &-picbox {
+      position: relative;
+      z-index: 3;
+      display: block;
+      margin: auto;
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      opacity: 0;
+      border: none;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+    &-submit {
+      width: 200px;
+      height: 60px;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+      background: #000000; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #434343,
+        #000000
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transform: translateY(-3px);
+        transition: 0.3s;
+      }
+    }
+    &-delete{
+      text-align: center;
+      padding: 5px 16px;
+    }
+  }
+}
+.prevew {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 270px;
+  height: 270px;
+  display: none;
+  border-radius: 50%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.btn-area {
+  width: 400px;
+  height: 60px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  @include mq(){
+    width: 100%;
+  }
+}
+.err_msg {
+  color: rgb(221, 48, 48);
+  display: inline-block;
+}
+
+.err {
+  border: 2px rgb(221, 48, 48) dashed;
+  background: rgba(247, 132, 132, 0.3);
+}

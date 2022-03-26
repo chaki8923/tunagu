@@ -1,0 +1,90 @@
+.p-login{
+
+  &-title{
+    width: 100%;
+    text-align: center;
+    line-height: 48px;
+    color: $font_color_default;
+
+  }
+  &-container{
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    @include mq(ls){
+      padding: 86px 10px 0 10px;
+    }
+    @include mq(md){
+      padding: 56px 10px 0 10px;
+    }
+    @include mq(){
+      padding: 36px 10px 0 10px;
+    }
+  }
+
+
+  &-inner{
+    width: 70%;
+    height: 640px;
+    margin: auto;
+    border: 2px $font_color_default solid;
+    border-radius: 5px;
+    padding: 24px 56px;
+    position: relative;
+    @include mq(ls){
+      width: 90%;
+    }
+    @include mq(md){
+      width: 90%;
+    }
+    @include mq(){
+      width: 100%;
+    }
+  }
+
+  &-msg{
+    height: 24px;
+    width: auto;
+  }
+
+  &-form{
+    position: absolute;
+    bottom: 20px;
+    width: 70%;
+    height: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    input[type="text"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      height: 42px;
+      padding: 5px;
+    }
+  }
+
+  &-store{
+    height: 40px;
+  }
+  &-submit{
+    width: 110px;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    display: block;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+
+  &-errtxt{
+    color: crimson;
+    display: inline-block;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+}

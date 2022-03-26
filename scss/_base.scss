@@ -1,0 +1,392 @@
+$font_color_default: #777;
+$font_color_date: #e37b89;
+$font_color_corp: #e3a8b1;
+$font_color_sub1: #b6a489;
+
+$font-family: "Crimson Text", serif;
+$breakpoints: (
+  "sp": "screen and (max-width: 414px)",
+  "md": "screen and (max-width: 768px)",
+  "ls": "screen and (max-width: 1025px)",
+  "xl": "screen and (max-width: 1400px)",
+) !default;
+//@mixinは関数みたいなものを作れる
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints,$breakpoint)} {
+    @content;
+  }
+}
+
+.edit-label {
+  display: inline-block;
+  height: 25px;
+  width: 150px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(154, 210, 228);
+  background: rgba(154, 210, 228, 0.6);
+  padding: 14px 10px;
+  @include mq(){
+    width: 100%;
+  }
+}
+
+$font_family: "Amatic SC", cursive;
+
+$font_family_modal: "Noto Serif JP", serif, "Reggae One", cursive;
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  position: relative;
+}
+
+p {
+  font-family: "Noto Serif JP", serif;
+  font-weight: normal;
+}
+
+.wave {
+  animation: wave 1s ease-in;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-3px, 0);
+  }
+  10% {
+    transform: translate3d(3px, -5px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+  40% {
+    transform: translate(-3px, -20px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translate(3px, -35px);
+  }
+  80% {
+    transform: translateY(-40px);
+  }
+  90% {
+    transform: translateY(-45px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-3px, -50px);
+    opacity: 0;
+  }
+}
+.role {
+  animation: role 0.4s ease-in forwards;
+}
+
+@keyframes role {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.general-err {
+  text-align: center;
+  line-height: 24px;
+  font-size: 24px;
+  color: red;
+}
+
+//==============================================
+//スライダー
+//==============================================//ドットの編集
+.pc-slider{
+  display: block;
+ 
+  @include mq(){
+    display: none;
+  }
+}
+.sp-slider{
+  display: none;
+
+  @include mq(){
+    display: block;
+  }
+}
+
+.slick-slider {
+  margin-bottom: 40px;
+}
+
+.container-slider-title {
+  width: 100%;
+  padding: 15px 0 15px;
+  text-align: center;
+  font-family: "Crimson Text", serif;
+}
+
+.dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  @include mq(){
+
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.dots li {
+  margin: 30px 20px 0 30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+  @include mq(){
+    margin: 30px 10px 0 10px;
+    
+  }
+}
+.dots li::after {
+  content: "";
+  width: 35px;
+  height: 15px;
+  position: absolute;
+  top: -8px;
+  left: -10px;
+  color: rgb(94, 91, 91);
+  background: rgb(94, 91, 91);
+  opacity: 1;
+  z-index: 3;
+  @include mq(){
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+.dots li.slick-active::after {
+  color: rgb(145, 1, 35);
+  background: #fbd3e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bb377d, #fbd3e9); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #bb377d,
+    #fbd3e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dots li button {
+  opacity: 0;
+}
+
+.slick-slide {
+  transition: 0.1s;
+  transform: scale(0.9);
+  height: 580px;
+}
+//戻る進むボタン
+.slick-next {
+  position: absolute;
+  bottom: 0px;
+  right: 15%;
+  border: none;
+
+  width: 24px;
+  @include mq(){
+    
+    bottom: 20px;
+  }
+}
+
+.slick-prev {
+  position: absolute;
+  bottom: 0px;
+  left: 15%;
+  width: 24px;
+
+  @include mq(){
+    
+    bottom: 20px;
+  }
+}
+
+.img-frame {
+  width: 33%;
+  height: 380px;
+  position: relative;
+  z-index: 4;
+  padding: 20px 0 0;
+  @include mq(ls){
+    height: 480px;
+  }
+  @include mq(md){
+    height: 420px;
+  }
+  @include mq(){
+    height: 543px;
+  }
+
+  img {
+    display: block;
+    width: 70%;
+    height: 98%;
+    object-fit: cover;
+    object-position: top;
+    margin: auto;
+    box-shadow: 15px 15px 10px rgba(0,0,0,.5);
+    @include mq(ls){
+      height: 93%;
+      width: 79%;
+    }
+    @include mq(md){
+      height: 90%;
+    }
+    @include mq(){
+      height: 90%;
+    }
+  }
+  
+  p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 45px;
+    width: 50%;
+    text-align: center;
+    padding: 5px 0 5px;
+    font-family: $font-family;
+    background: #ada996; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    ); 
+    @include mq(md){
+      width: 80%;
+      bottom: 80px;
+    }
+    @include mq(){
+      width: 80%;
+    }
+  }
+}
+.return-btn{
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 16px;
+  width: 110px;
+  height: 80px;
+  top: 120px;
+  left: 130px;
+  background: #333;
+  transition: .1s;
+  @include mq(ls){
+    left: 20px;
+  }
+  @include mq(md){
+    top: 30px;
+    left: 20px;
+  }
+  &:hover{
+    transition: .1s;
+    border: 1px #333 solid;
+    background: #fff;
+    color: #333;
+
+  }
+}
+
+//======================
+//ローディングアイコン
+//======================
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: rgb(227, 239, 243);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  img{
+    display: block;
+    position: fixed;
+    width: 100px;
+    top: 40%;
+    left: 43%;
+    transform: translateX(-50%);
+    animation: loader 1s linear  infinite;
+  }
+}
+
+@keyframes loader {
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
+}
+
+.point{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &-left{
+    min-width: 160px;
+    display: inline-block;
+  }
+  &-right{
+    display: inline-block;
+
+  }
+}
+
+.list-item a{
+  text-decoration: none;
+}
+
+
+.kyun{
+  position: absolute;
+  top: 20%;
+  left: calc(-20% - 50px);
+  width: 200px;
+}
+
+.motituki{
+  position: absolute;
+  bottom: 15%;
+  right: -37%;
+  width: 250px;
+}

@@ -1,0 +1,545 @@
+[02-Nov-2021 13:47:50 Asia/Tokyo] セッション切れ
+[02-Nov-2021 13:47:50 Asia/Tokyo] 取得成功PDOStatement Object
+(
+    [queryString] => SELECT s.id, title, category_id, s.weather_id, s.store_id, s.used, like_number, user_id,s.user_name, episode,servise_point, s.status_id,create_date,a.arcive,s.arcive_id,s.segment_id,
+        st.store,st.id, c.category_name,u.username,w.weather ,stat.status_name,sg.segment
+        FROM service_case As s 
+        INNER JOIN category As c ON category_id = c.id
+        INNER JOIN store As st  ON s.store_id = st.id
+        INNER JOIN users As u 
+        INNER JOIN `status` As stat  
+        INNER JOIN arcive as a ON s.arcive_id = a.id
+        INNER JOIN segment as sg
+        INNER JOIN weather As w ON s.weather_id = w.id
+        WHERE s.id = :id
+)
+
+[02-Nov-2021 13:47:50 Asia/Tokyo] 事例詳細Array
+(
+    [id] => 2
+    [title] => なんでんかんでん
+    [category_id] => 8
+    [weather_id] => 2
+    [store_id] => 2
+    [used] => 1
+    [like_number] => 1
+    [user_id] => 13
+    [user_name] => 
+    [episode] => なんでんかんでん
+    [servise_point] => 
+    [status_id] => 5
+    [create_date] => 2021-07-20
+    [arcive] => 2017-01
+    [arcive_id] => 1
+    [segment_id] => 3
+    [store] => オータ館林店
+    [category_name] => 遊技台
+    [username] => 茶木涼
+    [weather] => 晴
+    [status_name] => 匂い
+    [segment] => 常連様
+)
+
+[02-Nov-2021 13:47:50 Asia/Tokyo] liker中身
+[02-Nov-2021 13:47:53 Asia/Tokyo] storeArray
+(
+    [store] => オータ古川店
+    [store_id] => 1
+)
+
+[02-Nov-2021 13:47:53 Asia/Tokyo] $p_id中身34
+[02-Nov-2021 13:47:53 Asia/Tokyo] ajax通信開始
+[02-Nov-2021 13:47:53 Asia/Tokyo] いいね履歴なし>>>>>>>>>>>>>>>>>>>>>>>>
+[02-Nov-2021 13:47:53 Asia/Tokyo] いいね履歴なしの総いいね1
+[02-Nov-2021 13:47:56 Asia/Tokyo] セッション切れ
+[02-Nov-2021 13:47:56 Asia/Tokyo] 取得成功PDOStatement Object
+(
+    [queryString] => SELECT s.id, title, category_id, s.weather_id, s.store_id, s.used, like_number, user_id,s.user_name, episode,servise_point, s.status_id,create_date,a.arcive,s.arcive_id,s.segment_id,
+        st.store,st.id, c.category_name,u.username,w.weather ,stat.status_name,sg.segment
+        FROM service_case As s 
+        INNER JOIN category As c ON category_id = c.id
+        INNER JOIN store As st  ON s.store_id = st.id
+        INNER JOIN users As u 
+        INNER JOIN `status` As stat  
+        INNER JOIN arcive as a ON s.arcive_id = a.id
+        INNER JOIN segment as sg
+        INNER JOIN weather As w ON s.weather_id = w.id
+        WHERE s.id = :id
+)
+
+[02-Nov-2021 13:47:56 Asia/Tokyo] 事例詳細Array
+(
+    [id] => 2
+    [title] => なんでんかんでん
+    [category_id] => 8
+    [weather_id] => 2
+    [store_id] => 2
+    [used] => 1
+    [like_number] => 2
+    [user_id] => 13
+    [user_name] => 
+    [episode] => なんでんかんでん
+    [servise_point] => 
+    [status_id] => 5
+    [create_date] => 2021-07-20
+    [arcive] => 2017-01
+    [arcive_id] => 1
+    [segment_id] => 3
+    [store] => オータ館林店
+    [category_name] => 遊技台
+    [username] => 茶木涼
+    [weather] => 晴
+    [status_name] => 匂い
+    [segment] => 常連様
+)
+
+[02-Nov-2021 13:47:56 Asia/Tokyo] liker中身
+[02-Nov-2021 13:47:56 Asia/Tokyo] liker中身
+[02-Nov-2021 13:48:42 Asia/Tokyo] セッション切れ
+[02-Nov-2021 13:48:42 Asia/Tokyo] 取得成功PDOStatement Object
+(
+    [queryString] => SELECT s.id, title, category_id, s.weather_id, s.store_id, s.used, like_number, user_id,s.user_name, episode,servise_point, s.status_id,create_date,a.arcive,s.arcive_id,s.segment_id,
+        st.store,st.id, c.category_name,u.username,w.weather ,stat.status_name,sg.segment
+        FROM service_case As s 
+        INNER JOIN category As c ON category_id = c.id
+        INNER JOIN store As st  ON s.store_id = st.id
+        INNER JOIN users As u 
+        INNER JOIN `status` As stat  
+        INNER JOIN arcive as a ON s.arcive_id = a.id
+        INNER JOIN segment as sg
+        INNER JOIN weather As w ON s.weather_id = w.id
+        WHERE s.id = :id
+)
+
+[02-Nov-2021 13:48:42 Asia/Tokyo] 事例詳細Array
+(
+    [id] => 2
+    [title] => なんでんかんでん
+    [category_id] => 8
+    [weather_id] => 2
+    [store_id] => 2
+    [used] => 1
+    [like_number] => 2
+    [user_id] => 13
+    [user_name] => 
+    [episode] => なんでんかんでん
+    [servise_point] => 
+    [status_id] => 5
+    [create_date] => 2021-07-20
+    [arcive] => 2017-01
+    [arcive_id] => 1
+    [segment_id] => 3
+    [store] => オータ館林店
+    [category_name] => 遊技台
+    [username] => 茶木涼
+    [weather] => 晴
+    [status_name] => 匂い
+    [segment] => 常連様
+)
+
+[02-Nov-2021 13:48:42 Asia/Tokyo] liker中身
+[02-Nov-2021 13:48:42 Asia/Tokyo] liker中身
+[02-Nov-2021 13:48:46 Asia/Tokyo] $u_id中身34
+[02-Nov-2021 13:48:46 Asia/Tokyo] ajax通信開始
+[02-Nov-2021 13:48:46 Asia/Tokyo] 使い回し履歴なし>>>>>>>>>>>>>>>>>>>>>>>>
+[02-Nov-2021 13:48:46 Asia/Tokyo] ajax成功
+[02-Nov-2021 13:48:47 Asia/Tokyo] セッション切れ
+[02-Nov-2021 13:48:47 Asia/Tokyo] 取得成功PDOStatement Object
+(
+    [queryString] => SELECT s.id, title, category_id, s.weather_id, s.store_id, s.used, like_number, user_id,s.user_name, episode,servise_point, s.status_id,create_date,a.arcive,s.arcive_id,s.segment_id,
+        st.store,st.id, c.category_name,u.username,w.weather ,stat.status_name,sg.segment
+        FROM service_case As s 
+        INNER JOIN category As c ON category_id = c.id
+        INNER JOIN store As st  ON s.store_id = st.id
+        INNER JOIN users As u 
+        INNER JOIN `status` As stat  
+        INNER JOIN arcive as a ON s.arcive_id = a.id
+        INNER JOIN segment as sg
+        INNER JOIN weather As w ON s.weather_id = w.id
+        WHERE s.id = :id
+)
+
+[02-Nov-2021 13:48:47 Asia/Tokyo] 事例詳細Array
+(
+    [id] => 2
+    [title] => なんでんかんでん
+    [category_id] => 8
+    [weather_id] => 2
+    [store_id] => 2
+    [used] => 2
+    [like_number] => 2
+    [user_id] => 13
+    [user_name] => 
+    [episode] => なんでんかんでん
+    [servise_point] => 
+    [status_id] => 5
+    [create_date] => 2021-07-20
+    [arcive] => 2017-01
+    [arcive_id] => 1
+    [segment_id] => 3
+    [store] => オータ館林店
+    [category_name] => 遊技台
+    [username] => 茶木涼
+    [weather] => 晴
+    [status_name] => 匂い
+    [segment] => 常連様
+)
+
+[02-Nov-2021 13:48:47 Asia/Tokyo] liker中身
+[02-Nov-2021 13:48:47 Asia/Tokyo] liker中身
+[02-Nov-2021 13:48:54 Asia/Tokyo] セッション切れ
+[02-Nov-2021 13:48:54 Asia/Tokyo] アーカイブID
+[02-Nov-2021 13:48:54 Asia/Tokyo] ヒット件数19
+[02-Nov-2021 13:48:54 Asia/Tokyo] SQL文PDOStatement Object
+(
+    [queryString] => SELECT s.id ,title,category_id,weather_id,s.store_id,used,like_number,user_id,episode,s.arcive_id,s.servise_point,s.status_id, s.segment_id,create_date,c.category_name,user_name,pic,
+        st.store,stat.status_name,sg.segment,a.arcive,weather FROM service_case As s 
+        INNER JOIN category As c ON c.id = s.category_id 
+        INNER JOIN store As st ON st.id = s.store_id  
+        INNER JOIN users As u ON u.id = user_id
+        INNER JOIN weather As w ON w.id = s.weather_id
+        INNER JOIN arcive As a ON a.id = s.arcive_id
+        INNER JOIN status As stat ON stat.id = s.status_id
+        INNER JOIN segment As sg ON sg.id = s.segment_id WHERE delete_flg = 0 LIMIT 9 OFFSET 0
+)
+
+[02-Nov-2021 13:48:54 Asia/Tokyo] ユーザー情報Array
+(
+    [total] => 19
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 32
+                    [title] => アーカイブ
+                    [category_id] => 2
+                    [weather_id] => 4
+                    [store_id] => 7
+                    [used] => 2
+                    [like_number] => 2
+                    [user_id] => 14
+                    [episode] => こんちはこんちは
+                    [arcive_id] => 1
+                    [servise_point] => 
+                    [status_id] => 3
+                    [segment_id] => 2
+                    [create_date] => 2021-07-15
+                    [category_name] => 風除室
+                    [user_name] => 
+                    [pic] => 
+                    [store] => オータ東久留米
+                    [status_name] => また来るよ
+                    [segment] => ご新規様
+                    [arcive] => 2017-01
+                    [weather] => 雪
+                )
+
+            [1] => Array
+                (
+                    [id] => 34
+                    [title] => なんでんかんでん
+                    [category_id] => 8
+                    [weather_id] => 2
+                    [store_id] => 2
+                    [used] => 2
+                    [like_number] => 2
+                    [user_id] => 13
+                    [episode] => なんでんかんでん
+                    [arcive_id] => 1
+                    [servise_point] => 
+                    [status_id] => 5
+                    [segment_id] => 3
+                    [create_date] => 2021-07-20
+                    [category_name] => 遊技台
+                    [user_name] => 
+                    [pic] => img/8d80d6e0a0c6dc78ecad31f28635ef108a907fc8.png
+                    [store] => オータ館林店
+                    [status_name] => 感謝
+                    [segment] => 離反復帰
+                    [arcive] => 2017-01
+                    [weather] => 晴
+                )
+
+            [2] => Array
+                (
+                    [id] => 36
+                    [title] => 頑張った
+                    [category_id] => 1
+                    [weather_id] => 2
+                    [store_id] => 2
+                    [used] => 1
+                    [like_number] => 1
+                    [user_id] => 13
+                    [episode] => なんか頑張った
+                    [arcive_id] => 2
+                    [servise_point] => ウェイ絵ウィ
+                    [status_id] => 2
+                    [segment_id] => 1
+                    [create_date] => 2021-08-19
+                    [category_name] => トイレ
+                    [user_name] => 
+                    [pic] => img/8d80d6e0a0c6dc78ecad31f28635ef108a907fc8.png
+                    [store] => オータ館林店
+                    [status_name] => トラブル
+                    [segment] => 常連様
+                    [arcive] => 2017-02
+                    [weather] => 晴
+                )
+
+            [3] => Array
+                (
+                    [id] => 38
+                    [title] => ポスターやってたら
+                    [category_id] => 1
+                    [weather_id] => 2
+                    [store_id] => 2
+                    [used] => 0
+                    [like_number] => 1
+                    [user_id] => 13
+                    [episode] => ああああああああああ
+                    [arcive_id] => 2
+                    [servise_point] => 頑張った
+                    [status_id] => 5
+                    [segment_id] => 1
+                    [create_date] => 2021-08-30
+                    [category_name] => トイレ
+                    [user_name] => 
+                    [pic] => img/8d80d6e0a0c6dc78ecad31f28635ef108a907fc8.png
+                    [store] => オータ館林店
+                    [status_name] => 感謝
+                    [segment] => 常連様
+                    [arcive] => 2017-02
+                    [weather] => 晴
+                )
+
+            [4] => Array
+                (
+                    [id] => 40
+                    [title] => 喜んで
+                    [category_id] => 1
+                    [weather_id] => 4
+                    [store_id] => 2
+                    [used] => 1
+                    [like_number] => 1
+                    [user_id] => 13
+                    [episode] => ちくしょーーー
+                    [arcive_id] => 1
+                    [servise_point] => 胸ぐら掴まれた
+                    [status_id] => 2
+                    [segment_id] => 2
+                    [create_date] => 2021-09-16
+                    [category_name] => トイレ
+                    [user_name] => 
+                    [pic] => img/8d80d6e0a0c6dc78ecad31f28635ef108a907fc8.png
+                    [store] => オータ館林店
+                    [status_name] => トラブル
+                    [segment] => ご新規様
+                    [arcive] => 2017-01
+                    [weather] => 雪
+                )
+
+            [5] => Array
+                (
+                    [id] => 41
+                    [title] => 喜んで
+                    [category_id] => 1
+                    [weather_id] => 2
+                    [store_id] => 2
+                    [used] => 0
+                    [like_number] => 0
+                    [user_id] => 13
+                    [episode] => ちくしょーーー
+                    [arcive_id] => 37
+                    [servise_point] => 胸ぐら掴まれた胸ぐら掴まれた胸ぐら掴まれた胸ぐら掴まれた胸ぐら掴まれた胸ぐら掴まれた
+                    [status_id] => 2
+                    [segment_id] => 1
+                    [create_date] => 2021-10-18
+                    [category_name] => トイレ
+                    [user_name] => 
+                    [pic] => img/8d80d6e0a0c6dc78ecad31f28635ef108a907fc8.png
+                    [store] => オータ館林店
+                    [status_name] => トラブル
+                    [segment] => 常連様
+                    [arcive] => 2020-01
+                    [weather] => 晴
+                )
+
+            [6] => Array
+                (
+                    [id] => 42
+                    [title] => 喜んで
+                    [category_id] => 1
+                    [weather_id] => 4
+                    [store_id] => 2
+                    [used] => 0
+                    [like_number] => 1
+                    [user_id] => 13
+                    [episode] => ちくしょーーー
+                    [arcive_id] => 1
+                    [servise_point] => 胸ぐら掴まれた
+                    [status_id] => 2
+                    [segment_id] => 2
+                    [create_date] => 2021-09-16
+                    [category_name] => トイレ
+                    [user_name] => 
+                    [pic] => img/8d80d6e0a0c6dc78ecad31f28635ef108a907fc8.png
+                    [store] => オータ館林店
+                    [status_name] => トラブル
+                    [segment] => ご新規様
+                    [arcive] => 2017-01
+                    [weather] => 雪
+                )
+
+            [7] => Array
+                (
+                    [id] => 43
+                    [title] => 喜んで
+                    [category_id] => 1
+                    [weather_id] => 4
+                    [store_id] => 2
+                    [used] => 0
+                    [like_number] => 0
+                    [user_id] => 13
+                    [episode] => ちくしょーーー
+                    [arcive_id] => 1
+                    [servise_point] => 胸ぐら掴まれた
+                    [status_id] => 2
+                    [segment_id] => 2
+                    [create_date] => 2021-09-16
+                    [category_name] => トイレ
+                    [user_name] => 
+                    [pic] => img/8d80d6e0a0c6dc78ecad31f28635ef108a907fc8.png
+                    [store] => オータ館林店
+                    [status_name] => トラブル
+                    [segment] => ご新規様
+                    [arcive] => 2017-01
+                    [weather] => 雪
+                )
+
+            [8] => Array
+                (
+                    [id] => 44
+                    [title] => 喜んで
+                    [category_id] => 1
+                    [weather_id] => 4
+                    [store_id] => 2
+                    [used] => 1
+                    [like_number] => 1
+                    [user_id] => 13
+                    [episode] => ちくしょーーー
+                    [arcive_id] => 1
+                    [servise_point] => 胸ぐら掴まれた
+                    [status_id] => 2
+                    [segment_id] => 2
+                    [create_date] => 2021-09-16
+                    [category_name] => トイレ
+                    [user_name] => 
+                    [pic] => img/8d80d6e0a0c6dc78ecad31f28635ef108a907fc8.png
+                    [store] => オータ館林店
+                    [status_name] => トラブル
+                    [segment] => ご新規様
+                    [arcive] => 2017-01
+                    [weather] => 雪
+                )
+
+        )
+
+)
+
+[14-Nov-2021 16:55:01 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 2
+[14-Nov-2021 16:55:01 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 6
+[14-Nov-2021 16:55:01 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 9
+[14-Nov-2021 16:55:01 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:55:01 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 10
+[14-Nov-2021 16:55:01 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:55:01 Asia/Tokyo] PHP Notice:  Undefined variable: site_title in /Applications/MAMP/htdocs/tunag/head.php on line 22
+[14-Nov-2021 16:55:01 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:55:01 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/signup.php on line 8
+[14-Nov-2021 16:55:01 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:55:01 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:55:01 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 66
+[14-Nov-2021 16:55:01 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 67
+[14-Nov-2021 16:55:01 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/tunag/signup.php on line 102
+[14-Nov-2021 16:56:22 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 2
+[14-Nov-2021 16:56:22 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 6
+[14-Nov-2021 16:56:22 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 9
+[14-Nov-2021 16:56:22 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:56:22 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 10
+[14-Nov-2021 16:56:22 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:56:22 Asia/Tokyo] PHP Notice:  Undefined variable: site_title in /Applications/MAMP/htdocs/tunag/head.php on line 22
+[14-Nov-2021 16:56:22 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:56:22 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/signup.php on line 8
+[14-Nov-2021 16:56:22 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:56:22 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:56:22 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 66
+[14-Nov-2021 16:56:22 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 67
+[14-Nov-2021 16:56:22 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/tunag/signup.php on line 102
+[14-Nov-2021 16:56:28 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/login.php on line 9
+[14-Nov-2021 16:56:28 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:56:28 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:56:28 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 16:56:28 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/tunag/login.php on line 87
+[14-Nov-2021 17:15:42 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 2
+[14-Nov-2021 17:15:42 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 6
+[14-Nov-2021 17:15:42 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 9
+[14-Nov-2021 17:15:42 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 17:15:42 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 10
+[14-Nov-2021 17:15:42 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 17:15:42 Asia/Tokyo] PHP Notice:  Undefined variable: site_title in /Applications/MAMP/htdocs/tunag/head.php on line 22
+[14-Nov-2021 17:15:42 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 17:15:42 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/signup.php on line 8
+[14-Nov-2021 17:15:42 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 17:15:42 Asia/Tokyo] エラー発生SQLSTATE[HY000] [1045] Access denied for user 'xs172726_chaki'@'localhost' (using password: YES)
+[14-Nov-2021 17:15:42 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 66
+[14-Nov-2021 17:15:42 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 67
+[14-Nov-2021 17:15:42 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/tunag/signup.php on line 102
+[26-Feb-2022 09:46:45 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 2
+[26-Feb-2022 09:46:45 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 6
+[26-Feb-2022 09:46:45 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 9
+[26-Feb-2022 09:46:45 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 10
+[26-Feb-2022 09:46:45 Asia/Tokyo] PHP Notice:  Undefined variable: site_title in /Applications/MAMP/htdocs/tunag/head.php on line 22
+[26-Feb-2022 09:46:45 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/signup.php on line 8
+[26-Feb-2022 09:46:45 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 66
+[26-Feb-2022 09:46:45 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 67
+[26-Feb-2022 09:51:30 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 2
+[26-Feb-2022 09:51:30 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 6
+[26-Feb-2022 09:51:30 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 9
+[26-Feb-2022 09:51:30 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 10
+[26-Feb-2022 09:51:30 Asia/Tokyo] PHP Notice:  Undefined variable: site_title in /Applications/MAMP/htdocs/tunag/head.php on line 22
+[26-Feb-2022 09:51:30 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/signup.php on line 8
+[26-Feb-2022 09:51:30 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 66
+[26-Feb-2022 09:51:30 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 67
+[26-Feb-2022 09:52:55 Asia/Tokyo] PHP Notice:  Undefined variable: site_title in /Applications/MAMP/htdocs/tunag/head.php on line 22
+[26-Feb-2022 09:53:15 Asia/Tokyo] エラー発生SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 09:53:15 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/signup.php on line 8
+[26-Feb-2022 09:53:35 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 09:53:55 Asia/Tokyo] エラー発生SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 09:53:55 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 66
+[26-Feb-2022 09:53:55 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 67
+[26-Feb-2022 09:53:55 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/tunag/signup.php on line 102
+[26-Feb-2022 10:29:15 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:31:07 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 2
+[26-Feb-2022 10:31:07 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/auth.php on line 6
+[26-Feb-2022 10:31:07 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 9
+[26-Feb-2022 10:31:27 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:31:27 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/index.php on line 10
+[26-Feb-2022 10:31:47 Asia/Tokyo] エラー発生SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:31:47 Asia/Tokyo] PHP Notice:  Undefined variable: site_title in /Applications/MAMP/htdocs/tunag/head.php on line 22
+[26-Feb-2022 10:32:07 Asia/Tokyo] エラー発生SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:32:07 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/signup.php on line 8
+[26-Feb-2022 10:32:27 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:32:47 Asia/Tokyo] エラー発生SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:32:47 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 66
+[26-Feb-2022 10:32:47 Asia/Tokyo] PHP Notice:  Undefined index: HTTP_REFERER in /Applications/MAMP/htdocs/tunag/signup.php on line 67
+[26-Feb-2022 10:32:47 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/tunag/signup.php on line 102
+[26-Feb-2022 10:34:12 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:35:31 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/login.php on line 9
+[26-Feb-2022 10:35:51 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:36:11 Asia/Tokyo] エラー発生SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:36:31 Asia/Tokyo] エラー発生SQLSTATE[HY000] [2006] MySQL server has gone away
+[26-Feb-2022 10:36:31 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/tunag/login.php on line 87
+[26-Feb-2022 10:37:10 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/login.php on line 9
+[26-Feb-2022 10:37:33 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [2002] No such file or directory
+[26-Feb-2022 10:38:52 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/login.php on line 9
+[26-Feb-2022 10:39:23 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/login.php on line 9
+[26-Feb-2022 10:39:26 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/tunag/login.php on line 9
